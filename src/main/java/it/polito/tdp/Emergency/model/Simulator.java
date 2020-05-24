@@ -210,7 +210,8 @@ public class Simulator {
 
 	private CodiceColore nuovoCodiceColore() {
 		CodiceColore nuovo = coloreAssegnato;
-
+		
+		//Sequenziale, si potrebbe implementare randomico (più realistico)
 		if (coloreAssegnato == CodiceColore.WHITE)
 			coloreAssegnato = CodiceColore.YELLOW;
 		else if (coloreAssegnato == CodiceColore.YELLOW)
